@@ -1,1 +1,3 @@
-alert("This is an alert message box.");  // display string message
+if (navigator.requestMIDIAccess) {
+    navigator.requestMIDIAccess().then(success, failure);
+}
