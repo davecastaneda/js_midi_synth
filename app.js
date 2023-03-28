@@ -6,6 +6,11 @@ if (navigator.requestMIDIAccess) {
 
 function success(midiAccess) {
     console.log(midiAccess);
+    midiAccess.onstatechange = updateDevices;
+}
+
+function update(event) {
+    console.log(event);
 }
 
 function failure() {
