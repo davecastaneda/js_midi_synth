@@ -2,11 +2,12 @@ if (navigator.requestMIDIAccess) {
     navigator.requestMIDIAccess().then(success, failure);
 }
 
-// 4:30 Test
+// 8:11 Test
 
 function success(midiAccess) {
     console.log(midiAccess);
-    midiAccess.onstatechange = updateDevices;
+    // midiAccess.onstatechange = updateDevices;
+    midiAccess.addEventListener('statechange', updateDevices);
 }
 
 function update(event) {
