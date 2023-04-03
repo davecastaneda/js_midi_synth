@@ -12,6 +12,8 @@ function success(midiAccess) {
 
 function update(event) {
     console.log(event);
+    console.log('Name: $(event.port.name)');
+
 }
 
 function failure() {
