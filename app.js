@@ -10,9 +10,9 @@ function success(midiAccess) {
     midiAccess.addEventListener('statechange', updateDevices);
 }
 
-function update(event) {
+function updateDevices(event) {
     console.log(event);
-    console.log('Name: $(event.port.name)');
+    console.log('Name: $(event.port.name), Brand: ${event.port.manufacturer}, State: ${event.port.state}, Type: ${event.port.type}');
 
 }
 
