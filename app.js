@@ -6,6 +6,9 @@ function success(midiAccess) {
     // console.log(midiAccess);
     // midiAccess.onstatechange = updateDevices;
     midiAccess.addEventListener('statechange', updateDevices);
+
+    const inputs = midiAccess.inputs;
+    console.log(inputs);
 }
 
 function updateDevices(event) {
