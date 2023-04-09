@@ -9,6 +9,10 @@ function success(midiAccess) {
 
     const inputs = midiAccess.inputs;
     console.log(inputs);
+
+    inputs.forEach(input => {
+        console.log(input)
+    });
 }
 
 function updateDevices(event) {
