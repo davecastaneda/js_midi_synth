@@ -11,8 +11,13 @@ function success(midiAccess) {
     console.log(inputs);
 
     inputs.forEach(input => {
-        console.log(input)
+        console.log(input);
+        oninput.onmidimessage = handleInput;
     });
+}
+
+function handleInput(event) {
+    console.log(event);
 }
 
 function updateDevices(event) {
