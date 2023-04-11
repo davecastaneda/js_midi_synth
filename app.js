@@ -12,7 +12,8 @@ function success(midiAccess) {
 
     inputs.forEach(input => {
         console.log(input);
-        oninput.onmidimessage = handleInput;
+        // oninput.onmidimessage = handleInput;
+        input.addEventListener('midimessage', handleInput);
     });
 }
 
