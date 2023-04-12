@@ -18,7 +18,8 @@ function success(midiAccess) {
 }
 
 function handleInput(event) {
-    console.log(event);
+    // console.log(event);
+    const command = input.data[0];
 }
 
 function updateDevices(event) {
