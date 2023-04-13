@@ -20,6 +20,8 @@ function success(midiAccess) {
 function handleInput(event) {
     // console.log(event);
     const command = input.data[0];
+    const note = input.data[1];
+    const velocity = input.data[2];
 }
 
 function updateDevices(event) {
