@@ -22,7 +22,13 @@ function handleInput(event) {
     const command = input.data[0];
     const note = input.data[1];
     const velocity = input.data[2];
-    console.log(command, note, velocity);
+    // console.log(command, note, velocity);
+    switch (command) {
+        case 144: // noteOn
+            if (velocity > 0) {
+                // note is on
+            }
+    }
 }
 
 function updateDevices(event) {
