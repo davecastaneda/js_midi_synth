@@ -27,7 +27,12 @@ function handleInput(event) {
         case 144: // noteOn
             if (velocity > 0) {
                 // note is on
+            } else {
+                // note is off
             }
+            break;
+        case 128: // note off
+            break;
     }
 }
 
